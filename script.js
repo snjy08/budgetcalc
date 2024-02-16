@@ -130,6 +130,11 @@ function clearrecord() {
         expElm.innerHTML = "0";
         balElm.innerHTML = "0";
         document.getElementById("expensedetails").innerHTML = '';
+
+             // Reset localStorage values
+             localStorage.removeItem('expenses');
+             localStorage.removeItem('totalExpenses');
+             localStorage.removeItem('total');
     }
     alert("Cleared all data successfully");
 }
